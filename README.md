@@ -8,13 +8,24 @@ What Works
 ----------
 - send/receive messages via web socket
 - auto-bundle client code (sorta)
+  - one-time bundle for prod
+  - every-time bundle for dev (not working)
 
 What Doesn't Work
 -----------------
+- run directly from network (Deno feature)
+  - runtime client bundler relies on filesystem, doesn't work for net-run
+  - could detect this at runtime and swap out script src in index.html
 - chat system
-- distributed state (Redux?)
+  - ezpz proof of concept, just gotta add a textbox for rx/tx
+- distributed state
+  - use Redux?
+  - pub/sub actions
+  - duplicate state on client and server, sync occasionally
 - Entity-Component-System for game engine
+  - port from https://dknr.io/dev/flatlander
 - 3D graphics via WebGL
+  - THREE.js?
 
 What May Eventually Work Given Enough Effort
 --------------------------------------------
