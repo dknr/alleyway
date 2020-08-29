@@ -7,10 +7,10 @@ A multiplayer simulator for hanging out in an alleyway with friends.
 What Works
 ----------
 - send/receive messages via web socket
+- auto-bundle client code (sorta)
 
 What Doesn't Work
 -----------------
-- auto-bundle client code
 - chat system
 - distributed state (Redux?)
 - Entity-Component-System for game engine
