@@ -10,16 +10,21 @@ What Works
 
 What Doesn't Work
 -----------------
+- auto-bundle client code
 - chat system
 - distributed state (Redux?)
 - Entity-Component-System for game engine
 - 3D graphics via WebGL
 
+What May Eventually Work Given Enough Effort
+--------------------------------------------
+- VR support
+
 Instructions
 ------------
 First, install Deno.
 
-Then, run it directly from network:
+Then, run it directly from network (this also does not work!):
 ```
 deno --allow-net https://raw.githubusercontent.com/dknr/alleyway/master/app.ts
 ```
